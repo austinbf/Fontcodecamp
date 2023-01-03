@@ -1,0 +1,235 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Suger;
+}
+
+html {
+    font-size: 62.5%;
+
+
+}
+
+@font-face {
+    font-family: Suger;
+    src: url(../temp/font/Sugar\ Snow.ttf);
+}
+
+#welcome-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Suger;
+
+
+
+}
+
+#welcome-section p {
+    color: var(--main-red);
+    font-style: italic;
+    font-size: 1em;
+
+
+}
+
+#Austin-span {
+    background: linear-gradient(0deg, var(--main-red), var(--main-gray));
+    border-radius: 40%;
+    box-shadow: 10px -5px rgba(12, 187, 187, 0.5);
+}
+
+#navbar {
+    background-color: var(--main-red);
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+
+
+
+
+}
+
+#navbar a {
+    display: flex;
+    text-decoration: none;
+    color: var(--main-white);
+    padding: 2rem 3rem 0 2rem;
+    font-size: 1.4em;
+    align-content: flex-end;
+    height: 3rem;
+    width: 5rem;
+
+}
+
+#navbar a:hover {
+    background-color: rgb(166, 165, 172);
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: right;
+}
+
+#collections {
+    width: 100%;
+
+    background-color: #777875;
+
+
+}
+
+
+#collections h1 {
+
+    border: bottom 0.2em solid var(--main-white);
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 4rem;
+
+
+
+
+}
+
+#collections_h1 {
+    padding-bottom: 4rem;
+    text-decoration: underline;
+}
+
+#The_projects {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    padding-bottom: 4rem;
+
+}
+
+.project-img {
+    height: 33rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.project-title {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--main-gray);
+    text-align: center;
+    color: var(--main-white);
+    font-size: 2rem;
+    font-style: italic;
+
+}
+
+.project-title:hover {
+    color: #be3144;
+}
+
+.project-a {
+    text-decoration: none;
+
+}
+
+#contact {
+    display: grid;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--main-gray);
+    padding-top: 10rem;
+    overflow: hidden;
+}
+
+#contact-header {
+
+    font-size: 4rem;
+    color: var(--main-white);
+    margin: auto;
+
+
+}
+
+#contact-header p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.social-icons {
+    width: 50%;
+    margin: auto;
+    font-size: 1rem;
+    align-items: center;
+    justify-items: center;
+    column-gap: 10rem;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-icons:hover {
+    transition: -1px;
+}
+
+.social-icons a {
+    color: var(--main-white);
+    text-decoration: none;
+    width: 6rem;
+
+
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 4rem 0 2rem;
+    border-radius: 2px;
+}
+
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+.social-icons i {
+    font-size: 3rem;
+}
+
+.divider {
+    border-bottom: 3px solid var(--main-red);
+    margin-top: 10rem;
+}
+
+.ending {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+
+    text-align: center;
+}
